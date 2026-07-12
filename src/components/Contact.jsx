@@ -55,9 +55,14 @@ export default function Contact({ onBookClick }) {
               </div>
             </div>
 
-            <button className="btn-primary" onClick={onBookClick}>
+            <a 
+              href="https://ab.simplybook.me/v2/#book" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="btn-primary"
+            >
               Schedule Appointment
-            </button>
+            </a>
           </div>
 
           <div className="contact-map-panel">

@@ -62,9 +62,9 @@ export default function Footer({ onBookClick }) {
           <div>
             <h4 className="footer-title">Booking Portals</h4>
             <ul className="footer-links">
-              <li><a href="https://simplybook.me" target="_blank" rel="noopener noreferrer">simplybook.me</a></li>
+              <li><a href="https://ab.simplybook.me/v2/#book" target="_blank" rel="noopener noreferrer">simplybook.me</a></li>
               <li><a href="https://americanbeautysalons.net" target="_blank" rel="noopener noreferrer">americanbeautysalons.net</a></li>
-              <li><a href="#" onClick={(e) => { e.preventDefault(); onBookClick(); }}>Direct Booking Form</a></li>
+              <li><a href="https://ab.simplybook.me/v2/#book" target="_blank" rel="noopener noreferrer">Direct Booking Scheduler</a></li>
             </ul>
           </div>
 

@@ -38,9 +38,14 @@ export default function Hero({ onBookClick }) {
           </p>
           
           <div className="hero-buttons">
-            <button className="btn-primary" onClick={onBookClick}>
+            <a 
+              href="https://ab.simplybook.me/v2/#book" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="btn-primary"
+            >
               Book Session
-            </button>
+            </a>
             <a href="#services" onClick={(e) => handleScrollTo(e, 'services')} className="btn-secondary">
               View Menu
             </a>

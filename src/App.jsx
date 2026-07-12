@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -7,27 +7,20 @@ import InteractiveVisualizer from './components/InteractiveVisualizer';
 import Reviews from './components/Reviews';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import BookingModal from './components/BookingModal';
 
 function App() {
-  const [isBookModalOpen, setIsBookModalOpen] = useState(false);
-
-  const openBookModal = () => setIsBookModalOpen(true);
-  const closeBookModal = () => setIsBookModalOpen(false);
-
   return (
     <>
-      <Header onBookClick={openBookModal} />
+      <Header />
       <main>
-        <Hero onBookClick={openBookModal} />
-        <About onBookClick={openBookModal} />
-        <Services onBookClick={openBookModal} />
-        <InteractiveVisualizer onBookClick={openBookModal} />
+        <Hero />
+        <About />
+        <Services />
+        <InteractiveVisualizer />
         <Reviews />
-        <Contact onBookClick={openBookModal} />
+        <Contact />
       </main>
-      <Footer onBookClick={openBookModal} />
-      <BookingModal isOpen={isBookModalOpen} onClose={closeBookModal} />
+      <Footer />
     </>
   );
 }

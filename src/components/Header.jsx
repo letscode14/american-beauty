@@ -98,9 +98,15 @@ export default function Header({ onBookClick }) {
             >
               Contact
             </a>
-            <button className="btn-primary" style={{ padding: '0.6rem 1.5rem', fontSize: '0.85rem' }} onClick={onBookClick}>
+            <a 
+              href="https://ab.simplybook.me/v2/#book" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="btn-primary" 
+              style={{ padding: '0.6rem 1.5rem', fontSize: '0.85rem' }}
+            >
               Book Now
-            </button>
+            </a>
           </nav>
 
           <button className="nav-toggle" onClick={() => setMobileMenuOpen(true)}>
@@ -167,9 +173,16 @@ export default function Header({ onBookClick }) {
             >
               Contact
             </a>
-            <button className="btn-primary" style={{ marginTop: '2rem' }} onClick={() => { setMobileMenuOpen(false); onBookClick(); }}>
+            <a 
+              href="https://ab.simplybook.me/v2/#book" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="btn-primary" 
+              style={{ marginTop: '2rem' }} 
+              onClick={() => setMobileMenuOpen(false)}
+            >
               Book Now
-            </button>
+            </a>
           </div>
         </div>
       )}

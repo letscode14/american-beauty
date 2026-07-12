@@ -71,13 +71,15 @@ export default function Services({ onBookClick }) {
                   <li key={fIdx}>{feature}</li>
                 ))}
               </ul>
-              <button 
+              <a 
+                href="https://ab.simplybook.me/v2/#book" 
+                target="_blank" 
+                rel="noopener noreferrer"
                 className="btn-secondary" 
                 style={{ width: '100%', marginTop: '2rem', padding: '0.6rem' }}
-                onClick={onBookClick}
               >
                 Select & Book
-              </button>
+              </a>
             </div>
           ))}
         </div>

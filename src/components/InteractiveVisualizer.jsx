@@ -101,9 +101,15 @@ export default function InteractiveVisualizer({ onBookClick }) {
               </div>
             </div>
 
-            <button className="btn-primary" style={{ width: '100%' }} onClick={onBookClick}>
+            <a 
+              href="https://ab.simplybook.me/v2/#book" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="btn-primary" 
+              style={{ width: '100%' }}
+            >
               Book This Shade with Lana
-            </button>
+            </a>
           </div>
 
         </div>

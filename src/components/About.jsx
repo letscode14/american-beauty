@@ -36,13 +36,15 @@ export default function About({ onBookClick }) {
               </div>
             </div>
 
-            <button 
+            <a 
+              href="https://ab.simplybook.me/v2/#book" 
+              target="_blank" 
+              rel="noopener noreferrer"
               className="btn-primary" 
-              style={{ marginTop: '2.5rem' }} 
-              onClick={onBookClick}
+              style={{ marginTop: '2.5rem' }}
             >
               Meet Lana In Person
-            </button>
+            </a>
           </div>
 
         </div>
